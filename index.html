@@ -1,0 +1,144 @@
+<html>
+<header>
+
+    <title>四季教育数学题库</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/site.css" rel="stylesheet">
+    <link href="static/index.css" rel="stylesheet">
+</header>
+<body>
+<div class="wrap">
+    <!-- 以下为页眉内容 -->
+    <nav id="w1" class="navbar-default navbar-fixed-top navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w1-collapse"><span
+                        class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="/index.php">四季教育</a></div>
+            <div id="w1-collapse" class="collapse navbar-collapse">
+                <ul id="w2" class="navbar-nav navbar-right nav">
+                    <li><a href="/index.php?r=site%2Findex">主页</a></li>
+                    <li><a href="https://docs.mathcrowd.cn" target="_blank">文档</a></li>
+                    <li><a href="/index.php?r=worksheet%2Ffilter">卷库</a></li>
+                    <!-- 以下内容动态生成: -->
+                    <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">橘子小仙 <span
+                            class="caret"></span></a>
+                        <ul id="w3" class="dropdown-menu">
+                            <li><a href="/index.php?r=user%2Fview" tabindex="-1">我的资料</a></li>
+                            <li><a href="/index.php?r=site%2Fpassword" tabindex="-1">修改密码</a></li>
+                            <li><a href="/index.php?r=site%2Flogout" data-method="post" tabindex="-1">注销</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/index.php?r=user%2Fworksheet" tabindex="-1">我的组卷</a></li>
+                            <li><a href="/index.php?r=user%2Fproblem" tabindex="-1">我创建的试题</a></li>
+                            <li><a href="/index.php?r=user%2Fissue" tabindex="-1">我的工单</a></li>
+                            <li><a href="/index.php?r=user%2Fmission" tabindex="-1">我认领的试题</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/index.php?r=business%2Fvip" tabindex="-1">我的会员</a></li>
+                            <li><a href="/index.php?r=user%2Fstats" tabindex="-1">我的贡献/消费</a></li>
+                        </ul>
+                    </li>
+                    <!--  结束 -->
+                    <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">开工 <span
+                            class="caret"></span></a>
+                        <ul id="w4" class="dropdown-menu">
+                            <li><a href="/index.php?r=problem%2Fsearch" tabindex="-1">我要搜题</a></li>
+                            <li><a href="/index.php?r=worksheet%2Fsearch" tabindex="-1">我要找试卷</a></li>
+                            <li><a href="/index.php?r=mission%2Fgo" tabindex="-1">我要领试题</a></li>
+                            <li><a href="/index.php?r=issue%2Fgo" tabindex="-1">我要领工单</a></li>
+                            <li><a href="/index.php?r=keyword%2Findex" tabindex="-1">知识点列表</a></li>
+                            <li><a href="/index.php?r=chapter%2Findex" tabindex="-1">章节列表</a></li>
+                        </ul>
+                    </li>
+                    <li class="help-link"><a href="javascript:void(0);"><span
+                            class="glyphicon glyphicon-question-sign"></span></a></li>
+                    <li><a href="/index.php?r=cart%2Fview"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 结束 -->
+
+    <div class="container">
+        <!-- 以下为首页内容 -->
+        <div class="site-index">
+
+            <div class="jumbotron">
+                <h1>橘子数学社区</h1>
+                <h2><small>Join the Crowd, Share Real Math.</small></h2>
+                <div class="row main-buttons">
+                    <div class="col-sm-6 col-md-3 col-md-offset-3">
+                        <a class="btn btn-primary" href="http://docs.mathcrowd.cn/" target="_blank" data-intro="提示1">超链接1</a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a class="btn btn-success" href="https://zhuanlan.zhihu.com/mathcrowd" target="_blank"
+                           data-intro="提示2.">超链接2</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="posters" class="carousel slide poster" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#posters" data-slide-to="0" class="active"></li>
+                    <li data-target="#posters" data-slide-to="1"></li>
+                    <li data-target="#posters" data-slide-to="2"></li>
+                    <li data-target="#posters" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="http://docs.mathcrowd.cn/howtos/how_to_share_math.html" title="我要分享"><img
+                                src="https://cdn2.mathcrowd.cn/uploads/../img/share_math.png" alt="share_math"></a>
+                    </div>
+                    <div class="item">
+                        <a href="index.php?r=tex/tools" title="马上转换"><img
+                                src="https://cdn2.mathcrowd.cn/uploads/../img/allinone.png" alt="docx2tex"></a>
+                    </div>
+                    <div class="item">
+                        <a href="javascript:void(0)"
+                           onclick="$('#qr-modal #qr-img').attr('src','index.php?r=business%2Fqr-buy-role');$('#qr-modal').modal('show');"
+                           title="立即申请体验"><img src="https://cdn2.mathcrowd.cn/uploads/../img/free.png" alt="free"></a>
+                    </div>
+                    <div class="item">
+                        <a href="http://docs.mathcrowd.cn/community/take_mission.html" title="如何参与编辑"><img
+                                src="https://cdn2.mathcrowd.cn/uploads/../img/communist.png" alt="communist"></a>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#posters" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#posters" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+        <!-- 结束 -->
+    </div>
+</div>
+
+<!-- 以下为页脚内容 -->
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; 四季教育 2016-2020 | <a href="http://www.beian.miit.gov.cn">沪ICP备16007938号</a> | <a
+                target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010902002680">沪公网安备
+            31010902002680号</a></p>
+    </div>
+</footer>
+<!-- 结束  -->
+
+<script src="static/index.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
